@@ -35,8 +35,8 @@ The process involves:
    - **GPT2-Zinc480M** was selected for its potential to create rich molecular representations through pretraining.
    - **SECFP** serves as a reliable baseline.
 3. **Model Selection**:
-   - **Logistic Regression (LR)**: Given that the feature representations may be rich, a simple linear model is likely sufficient due to the limited number of observations.
-   - **Random Forest (RF)**: Chosen for its stability as a non-linear classifier, we aim to explore if non-linear classification improves performance over linear models.
+   - **Logistic Regression (LR)**: Given that the feature representations may already be representative enough, a simple linear model is likely sufficient in this case due to the limited number of observations.
+   - **Random Forest (RF)**: Chosen for its stability as a non-linear classifier, we aim to explore if non-linear classification improves performance over the linear model.
 4. **Evaluation Methodology**:
    - **ROC AUC Metric**: AUC is used to compare different models and featurizers because it summarizes the trade-off between false positives and false negatives across all probability thresholds.
    - In practice, both false positives (predicting a molecule is active when it isn’t) and false negatives (predicting inactivity when the molecule is active) have different implications. Therefore, users can use the ROC curve to select the optimal probability threshold based on their needs.
