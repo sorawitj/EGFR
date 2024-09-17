@@ -44,7 +44,6 @@ The process involves:
 ### Code Structure
 1. [utils.py](https://github.com/sorawitj/EGFR/blob/main/utils.py) contains the following functions:
    - **get_data()**: Loads data from a CSV file, applies a threshold to define "active" molecules, and returns a DataFrame with relevant columns.
-   _preprocess()
    - **prepare_data()**: Converts the SMILES strings into feature vectors using the featurizer, and returns the features (X) and labels (y).
    - **get_model_performance()**: Performs cross-validation on the models using ROC AUC as the evaluation metric.
    Plots the mean ROC curve, as well as its variability to visualize model performance.
